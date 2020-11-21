@@ -14,17 +14,53 @@
 
 </head>
 
-<body>
-
-  <h2>Olá mundo</h2>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
-  </script>
-  <script src=""></script>
+<body class="bg-dark" id="page-top">
+ <!--navegação  -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">Admin Curso</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCurso" aria-controls="navbarCurso" aria-expanded="false" aria-label="Navegação toggle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarCurso" class="collapse navbar-collapse">
+      <ul class="navbar-nav navbar-sidenav">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right">
+          <a href="#" class="nav-link">
+            <i class="fas fa-tachometer-alt"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right">
+          <a href="#" class="nav-link">
+            <i class="fas fa-table"></i>
+            <span class="nav-link-text">Tabelas</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right">
+          <a href="#" class="nav-link">
+            <i class="fas fa-wrench"></i>
+            <span class="nav-link-text">Componentes</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right">
+          <a href="#" class="nav-link">
+            <i class="fas fa-file"></i>
+            <span class="nav-link-text">Páginas</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a href="" id="sidenavToggler" class="nav-link text-center">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script src="./Dashboard/bibliotecas/jquery/jquery.min.js"></script>
+  <script src="./Dashboard/bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./Dashboard/bibliotecas/jquery-easing/jquery.easing.min.js"></script>
+  <script src="./Dashboard/js/sb-admin.min.js"></script>
 </body>
 
 </html>

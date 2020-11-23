@@ -22,7 +22,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div id="navbarCurso" class="collapse navbar-collapse">
-      <ul class="navbar-nav navbar-sidenav">
+      <ul class="navbar-nav navbar-sidenav" id="linksAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right">
           <a href="#" class="nav-link">
             <i class="fas fa-tachometer-alt"></i>
@@ -36,16 +36,52 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right">
-          <a href="#" class="nav-link">
+          <a href="#linksComponentes" class="nav-link nav-link-collapse" data-toggle="collapse" data-parent="#linksAccordion">
             <i class="fas fa-wrench"></i>
             <span class="nav-link-text">Componentes</span>
           </a>
+          <ul class="sidenav-second-level collapse " id="linksComponentes">
+            <li>
+              <a href="login.html">Página Login</a>
+            </li>
+            <li>
+              <a href="recuperar.html">Página Recupera</a>
+            </li>
+            <li>
+              <a href="registro.html">Página Registro</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapse" data-toggle="collapse" href="#link3nivel">Links 3 niveis</a>
+              <ul class="sidenav-third-level collapse" id="link3nivel">
+                <li>
+                  <a href="#">Link 1</a>
+                </li>
+                <li>
+                  <a href="#">Link 2</a>
+                </li>
+                <li>
+                  <a href="#">Link 3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right">
-          <a href="#" class="nav-link">
+          <a href="#linksPagina" class="nav-link nav-link-collapse" data-toggle="collapse" data-parent="#linksAccordion">
             <i class="fas fa-file"></i>
             <span class="nav-link-text">Páginas</span>
           </a>
+          <ul class="sidenav-second-level collapse" id="linksPagina">
+            <li>
+              <a href="login.html">Página Login</a>
+            </li>
+            <li>
+              <a href="recuperar.html">Página Recupera</a>
+            </li>
+            <li>
+              <a href="registro.html">Página Registro</a>
+            </li>
+          </ul>
         </li>
       </ul>
       <ul class="navbar-nav sidenav-toggler">
